@@ -4,11 +4,25 @@ public class Productos {
     public String producto;
     public int codigo;
     public int precio;
+    public int stock;
 
-    public Productos(String producto, int codigo, int precio) {
+    public Productos() {
+    }
+
+
+    public Productos(String producto, int codigo, int precio, int stock) {
         this.producto = producto;
         this.codigo = codigo;
         this.precio = precio;
+        this.stock = stock;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 
     public String getProducto() {
